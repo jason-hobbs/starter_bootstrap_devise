@@ -1,0 +1,12 @@
+%nav.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to "Project Name", root_path, class: "navbar-brand"
+    #navbar.navbar-collapse.collapse
+      = link_to "Sign Up", "#", class: "btn btn-primary navbar-btn navbar-right btn-margin-left"
+      = link_to "Sign In", "#", class: "btn btn-primary navbar-btn navbar-right btn-margin-right"

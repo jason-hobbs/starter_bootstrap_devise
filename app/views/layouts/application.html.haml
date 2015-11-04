@@ -1,0 +1,16 @@
+!!!
+%html
+  %head
+    %title StarterBootstrap
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    = csrf_meta_tags
+  %body
+    = render 'layouts/navbar'
+    = yield
+    = render 'layouts/messages'
+    .container
+      %hr
+        %footer
+          %p &copy; Company 2015
