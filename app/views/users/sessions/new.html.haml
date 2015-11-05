@@ -1,0 +1,28 @@
+%br/
+.container
+  .row
+    .col-sm-3
+    .col-sm-6
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title Sign In
+        .panel-body
+          = bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+            %fieldset
+              .form-group
+                .row
+                  .col-sm-12
+                    = f.text_field :email, icon: "user", hide_label: true, autofocus: true, placeholder: "User Name or Email"
+                .row
+                  .col-sm-12
+                    = f.password_field :password, icon: "asterisk", hide_label: true, autocomplete: "off", placeholder: "Password"
+                - if devise_mapping.rememberable?
+                  .row
+                    .col-sm-12
+                      = f.check_box :remember_me
+            %fieldset.form-group.action
+              %input(type="submit" value="Sign in" class="btn btn-default")
+          .row
+            .col-sm-12
+              = render "users/shared/links"
+    .col-sm-3
