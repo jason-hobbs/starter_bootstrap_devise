@@ -12,7 +12,7 @@
         %ul.nav.navbar-nav.navbar-right
           %li.dropdown
             %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-              = profile_image_for(current_user, size: 30) + current_user.email
+              = profile_image_for(current_user, size: 30) + current_user.username
               %span.caret
             %ul.dropdown-menu
               - if current_user.try(:admin?)
@@ -22,7 +22,7 @@
                 = link_to '<i class="glyphicon glyphicon-edit"></i> Edit'.html_safe, edit_user_registration_path(current_user)
               %li.divider{:role => "separator"}
               %li
-                = link_to '<i class="glyphicon glyphicon-log-out"></i> Sign Out'.html_safe, destroy_user_session_path(current_user)
+                = link_to '<i class="glyphicon glyphicon-log-out"></i> Sign Out'.html_safe, destroy_user_session_path, :method => :delete 
       - else
         = link_to "Sign Up", new_user_registration_path, class: "btn btn-primary navbar-btn navbar-right btn-margin-left"
         = link_to "Sign In", new_user_session_path, class: "btn btn-primary navbar-btn navbar-right btn-margin-right"

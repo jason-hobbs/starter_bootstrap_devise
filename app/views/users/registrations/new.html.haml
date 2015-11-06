@@ -12,6 +12,9 @@
               .form-group
                 .row
                   .col-sm-12
+                    = f.text_field :username, icon: "user", hide_label: true, placeholder: "User Name"
+                .row
+                  .col-sm-12
                     = f.email_field :email, icon: "envelope", hide_label: true, placeholder: "Email Address"
                 .row
                   .col-sm-12
