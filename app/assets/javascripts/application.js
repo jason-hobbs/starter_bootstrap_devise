@@ -18,4 +18,4 @@
 //= require_tree .
 
 
-jQuery.extend($.gritter.options,{time:1000,});
+jQuery.extend($.gritter.options,{time:1500,});
