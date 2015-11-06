@@ -6,8 +6,19 @@ class ApplicationController < ActionController::Base
 
   protected
 
-    def configure_permitted_parameters
-      devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password, :password_confirmation) }
-      devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:login, :username, :email, :password, :remember_me) }
-    end
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password, :password_confirmation) }
+    devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:login, :username, :email, :password, :remember_me) }
+  end
+
+  def after_sign_out_path_for(resource_or_scope)
+    gflash :success => "Signed out successfully!"
+    root_path
+  end
+
+  def after_sign_in_path_for(resource_or_scope)
+    gflash :success => "Signed in successfully!"
+    root_path
+  end
+
 end
