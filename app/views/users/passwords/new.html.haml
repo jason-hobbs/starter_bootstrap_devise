@@ -1,0 +1,17 @@
+%br/
+.container
+  .row
+    .col-sm-3
+    .col-sm-6
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title Forgot your password?
+        .panel-body
+          = bootstrap_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+            %fieldset
+              .form-group
+                .row
+                  .col-sm-12
+                    = f.email_field :email, icon: "envelope", hide_label: true, autofocus: true, placeholder: "Email Address"
+                = f.submit "Send me reset password instructions", class: "btn btn-default"
+              = render "users/shared/links"

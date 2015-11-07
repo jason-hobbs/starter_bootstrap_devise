@@ -9,6 +9,13 @@ class User < ActiveRecord::Base
   validates_presence_of :username
   validates :username, length: { in: 4..20 }
   attr_accessor :login
+  validate :validate_username
+
+  def validate_username
+    if User.where(email: username).exists?
+      errors.add(:username, :invalid)
+    end
+  end
 
   def gravatar_id
   	Digest::MD5::hexdigest(email.downcase)
@@ -19,7 +26,11 @@ class User < ActiveRecord::Base
     if login = conditions.delete(:login)
       where(conditions).where(["lower(username) = :value OR lower(email) = :value", { :value => login.downcase }]).first
     else
-      where(conditions).first
+      if conditions[:email].nil?
+        where(conditions).first
+      else
+        where(email: conditions[:email]).first
+    end
     end
   end
 
