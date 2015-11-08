@@ -13,8 +13,5 @@
                 .row
                   .col-sm-12
                     = f.email_field :email, icon: "envelope", hide_label: true, autofocus: true, placeholder: "Email Address"
-            %fieldset.form-group.action
-              = f.submit "Resend unlock instructions", class: "btn btn-default"
-          .row
-            .col-sm-12
+                = f.submit "Resend unlock instructions", class: "btn btn-default"
               = render "users/shared/links"
