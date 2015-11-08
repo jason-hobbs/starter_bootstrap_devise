@@ -7,11 +7,14 @@
         .panel-heading
           %h3.panel-title Resend unlock instructions
         .panel-body
-          = form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f|
+          = bootstrap_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f|
             %fieldset
               .form-group
                 .row
                   .col-sm-12
                     = f.email_field :email, icon: "envelope", hide_label: true, autofocus: true, placeholder: "Email Address"
-                = f.submit "Resend unlock instructions", class: "btn btn-default"
+            %fieldset.form-group.action
+              = f.submit "Resend unlock instructions", class: "btn btn-default"
+          .row
+            .col-sm-12
               = render "users/shared/links"
