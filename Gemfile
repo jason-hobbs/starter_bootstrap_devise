@@ -16,12 +16,16 @@ gem 'gritter'
 gem 'haml-rails'
 gem 'dotenv-rails'
 gem 'pg'
-gem 'rails_12factor', group: :production
 gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'simplecov', :require => false, :group => :test
 gem 'friendly_id'
 gem 'whenever', :require => false
 gem 'rack-attack'
+
+group :production do
+  gem 'rails_12factor'
+  gem 'passenger'
+end
 
 group :development do
   gem 'brakeman'
