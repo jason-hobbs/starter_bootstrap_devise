@@ -5,6 +5,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :lockable, :timeoutable
 
+  extend FriendlyId
+  friendly_id :username, use: :slugged
+
   validates_uniqueness_of :username
   validates_presence_of :username
   validates :username, length: { in: 4..20 }
