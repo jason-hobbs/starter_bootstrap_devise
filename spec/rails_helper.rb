@@ -5,11 +5,14 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+require 'devise'
+require 'factory_girl'
 require 'simplecov'
 SimpleCov.start
 
 RSpec.configure do |config|
   config.include Devise::TestHelpers, type: :controller
+  config.include FactoryGirl::Syntax::Methods
 end
 # Add additional requires below this line. Rails is not loaded until this point!
 
