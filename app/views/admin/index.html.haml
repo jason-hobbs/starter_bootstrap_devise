@@ -1,1 +1,25 @@
-%p #{current_user.username} is an admin
+%br/
+.container
+  .row
+    .col-sm-1
+    .col-sm-10
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title All Users
+        .panel-body
+          - @users.each do |user|
+            .row
+              .col-sm-3
+                = user.username
+              .col-sm-6
+                = user.email
+              .col-sm-3
+                = link_to 'Edit', edit_user_registration_path(user)
+                |
+                = link_to 'Destroy', registration_path(user), method: :delete, data: { confirm: 'Are you sure?' }
+              %hr
+          %br
+          .row
+            .col-sm-12
+              = link_to 'New User', new_user_registration_path, class: "btn btn-default"
+    .col-sm-1
