@@ -29,10 +29,6 @@
                 .row
                   .col-sm-12
                     = f.password_field :current_password, hide_label: true, icon: "asterisk", placeholder: "Current Password"
-                - if current_user.try(:admin?)
-                  .row
-                    .col-sm-12
-                      = f.check_box :admin
                 = f.submit "Update", class: "btn btn-default"
           %p #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, class: "btn btn-default", method: :delete}
           = link_to "Back", :back

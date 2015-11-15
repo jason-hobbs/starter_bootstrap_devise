@@ -7,7 +7,7 @@
         .panel-heading
           %h3.panel-title Edit User
         .panel-body
-          = bootstrap_form_tag url: admin_edit_path(@user) do |f|
+          = bootstrap_form_for @user, url: admin_edit_path(@user) do |f|
             %fieldset
               .form-group
                 .row

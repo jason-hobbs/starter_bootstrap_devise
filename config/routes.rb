@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'pages#home'
   get "admin" => "admin#index"
   get "admin/edit" => "admin#edit"
-  post 'admin/edit' => 'admin#update'
+  patch 'admin/edit' => 'admin#update'
 end
