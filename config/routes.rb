@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get "admin" => "admin#index"
   get "admin/edit" => "admin#edit"
   patch 'admin/edit' => 'admin#update'
+  delete 'admin/edit' => 'admin#destroy'
 end

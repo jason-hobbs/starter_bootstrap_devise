@@ -19,6 +19,12 @@ class AdminController < ApplicationController
     end
   end
 
+  def destroy
+    @user = User.friendly.find(params[:format])
+    @user.destroy
+    redirect_to admin_path, :gflash => { :success => "Account deleted!" }
+  end
+
   private
 
   def user_params
