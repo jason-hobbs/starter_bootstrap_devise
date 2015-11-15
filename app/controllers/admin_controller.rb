@@ -6,4 +6,8 @@ class AdminController < ApplicationController
     @users = User.all
   end
 
+  def edit
+    @user = User.friendly.find(params[:format])
+  end
+
 end
