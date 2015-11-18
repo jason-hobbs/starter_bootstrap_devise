@@ -12,6 +12,7 @@ class AdminController < ApplicationController
 
   def update
     @user = User.friendly.find(params[:format])
+    @user.slug = nil
     if @user.update_without_password(user_params)
       redirect_to admin_path, :gflash => { :success => "Account updated!" }
     else

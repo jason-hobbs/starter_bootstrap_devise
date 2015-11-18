@@ -7,6 +7,8 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def after_update_path_for(resource)
+    resource.slug = nil
+    resource.save!
     gflash :success => "Account updated!"
     root_path
   end
