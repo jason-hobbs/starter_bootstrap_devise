@@ -29,7 +29,7 @@ class AdminController < ApplicationController
   def confirm
     user = User.find(params[:id])
     user.confirmation_token = Digest::SHA1.hexdigest([Time.now, rand].join)
-    user.save
+    user.save!
     redirect_to admin_path, :gflash => { :success => "User Confirmed" }
   end
 

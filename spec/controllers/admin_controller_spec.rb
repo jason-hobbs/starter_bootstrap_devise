@@ -35,6 +35,11 @@ RSpec.describe AdminController, type: :controller do
       delete :destroy, format: user
       expect(response).to redirect_to(admin_path)
     end
+    it "can confirm a user" do
+      user = FactoryGirl.create(:user)
+      get :confirm, id: user.id
+      expect(response).to redirect_to(admin_path)
+    end
   end
 
   context "when not an admin" do
