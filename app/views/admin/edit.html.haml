@@ -30,8 +30,8 @@
                       - else
                         = f.check_box :admin
                 = f.submit "Update", class: "btn btn-default"
-                - unless @user.unlock_token.nil?
-                  = link_to 'Unlock', admin_unlock_path, class: "btn btn-default"
+                - unless @user.locked_at.nil?
+                  = link_to 'Unlock', admin_unlock_path(:id => @user.id), class: "btn btn-default"
                 - if @user.confirmation_token.nil?
                   = link_to 'Confirm', admin_confirm_path(:id => @user.id), class: "btn btn-default"
           = link_to "Back", :back

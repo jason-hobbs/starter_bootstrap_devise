@@ -34,6 +34,9 @@ class AdminController < ApplicationController
   end
 
   def unlock
+    user = User.find(params[:id])
+    user.unlock_access!
+    redirect_to admin_path, :gflash => { :success => "User Unlocked" }
   end
 
   private

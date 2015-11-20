@@ -40,6 +40,11 @@ RSpec.describe AdminController, type: :controller do
       get :confirm, id: user.id
       expect(response).to redirect_to(admin_path)
     end
+    it "can unlock a user" do
+      user = FactoryGirl.create(:locked)
+      get :unlock, id: user.id
+      expect(response).to redirect_to(admin_path)
+    end
   end
 
   context "when not an admin" do
