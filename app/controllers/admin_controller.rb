@@ -21,9 +21,19 @@ class AdminController < ApplicationController
   end
 
   def destroy
-    @user = User.friendly.find(params[:format])
+    @user = User.friendly.find(params[:id])
     @user.destroy
     redirect_to admin_path, :gflash => { :success => "Account deleted!" }
+  end
+
+  def confirm
+    user = User.find(params[:id])
+    user.confirmation_token = Digest::SHA1.hexdigest([Time.now, rand].join)
+    user.save
+    redirect_to admin_path, :gflash => { :success => "User Confirmed" }
+  end
+
+  def unlock
   end
 
   private
