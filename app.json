@@ -1,0 +1,6 @@
+{
+  "name": "Starter_bootstrap_devise",
+  "description": "Starter site for Rails apps",
+  "repository": "https://github.com/jason-hobbs/starter_bootstrap_devise.git",
+  "keywords": ["rails", "devise", "bootstrap"]
+}
