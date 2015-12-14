@@ -33,6 +33,8 @@ group :development do
   gem 'bullet'
   gem 'spring'
   gem 'thin'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   #gem 'rack-mini-profiler'
   gem 'traceroute'
 end
