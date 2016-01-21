@@ -8,7 +8,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
-gem 'turbolinks', :git => 'https://github.com/rails/turbolinks.git'
+gem 'turbolinks'
 gem 'jbuilder'
 gem 'sdoc', group: :doc
 gem 'devise'
