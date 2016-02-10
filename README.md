@@ -1,11 +1,12 @@
 [![Code Climate](https://codeclimate.com/github/jason-hobbs/starter_bootstrap_devise/badges/gpa.svg)](https://codeclimate.com/github/jason-hobbs/starter_bootstrap_devise) [![Test Coverage](https://codeclimate.com/github/jason-hobbs/starter_bootstrap_devise/badges/coverage.svg)](https://codeclimate.com/github/jason-hobbs/starter_bootstrap_devise/coverage)
+[![security](https://hakiri.io/github/jason-hobbs/starter_bootstrap_devise/master.svg)](https://hakiri.io/github/jason-hobbs/starter_bootstrap_devise/master)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ###Starter_Bootstrap
 
 This is a starter site for Ruby on Rails apps.  
 It has bootstrap, gritter notifications, postgresql, gravatar, and devise built in.  
-Uses Ruby 2.2.3 and Rails 4.2.5 
+Uses Ruby 2.2.3 and Rails 4.2.5
 [Demo here](http://starter-bootstrap-devise.heroku.com).  
 
 Clone to a folder, then:  
