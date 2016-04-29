@@ -285,6 +285,7 @@ DEPENDENCIES
   bootstrap_form
   brakeman
   bullet
+  bundler
   byebug
   capybara
   codeclimate-test-reporter

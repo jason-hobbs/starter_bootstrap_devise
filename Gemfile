@@ -14,6 +14,7 @@ gem 'sdoc', group: :doc
 gem 'devise'
 gem 'gritter'
 gem 'haml-rails'
+gem 'bundler'
 gem 'dotenv-rails'
 gem 'pg'
 gem 'codeclimate-test-reporter', group: :test, require: nil
