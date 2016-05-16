@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.3.1'
-gem 'rails'
+gem 'rails', '>= 5.0.0.rc1'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'sass-rails'
@@ -33,7 +33,7 @@ group :development do
   gem 'web-console'
   gem 'bullet'
   gem 'spring'
-  gem 'thin'
+  gem 'puma'
   gem 'better_errors'
   gem 'binding_of_caller'
   #gem 'rack-mini-profiler'
@@ -41,6 +41,7 @@ group :development do
 end
 group :development, :test do
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
   gem 'minitest'
   gem 'byebug'
 end
