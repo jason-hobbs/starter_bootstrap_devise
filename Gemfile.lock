@@ -40,7 +40,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (7.0.0)
-    autoprefixer-rails (6.3.6.1)
+    autoprefixer-rails (6.3.6.2)
       execjs
     bcrypt (3.1.11)
     better_errors (2.1.1)
@@ -55,10 +55,10 @@ GEM
     bootstrap_form (2.3.0)
     brakeman (3.3.0)
     builder (3.2.2)
-    bullet (5.0.0)
+    bullet (5.1.0)
       activesupport (>= 3.0.0)
-      uniform_notifier (~> 1.9.0)
-    byebug (9.0.4)
+      uniform_notifier (~> 1.10.0)
+    byebug (9.0.5)
     capybara (2.7.1)
       addressable
       mime-types (>= 1.16)
@@ -120,7 +120,7 @@ GEM
       nokogiri (~> 1.6.0)
       ruby_parser (~> 3.5)
     i18n (0.7.0)
-    jbuilder (2.4.1)
+    jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
     jquery-rails (4.1.1)
@@ -133,9 +133,9 @@ GEM
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
     method_source (0.8.2)
-    mime-types (3.0)
+    mime-types (3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0221)
+    mime-types-data (3.2016.0521)
     mini_portile2 (2.0.0)
     minitest (5.9.0)
     multi_json (1.12.1)
@@ -249,7 +249,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
-    uniform_notifier (1.9.0)
+    uniform_notifier (1.10.0)
     warden (1.2.6)
       rack (>= 1.0)
     web-console (3.1.1)
@@ -313,4 +313,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.4
+   1.12.5
