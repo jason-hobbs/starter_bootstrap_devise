@@ -13,7 +13,7 @@ gem 'jbuilder'
 gem 'sdoc', group: :doc
 gem 'devise'
 gem 'gritter'
-gem 'haml-rails'
+gem 'hamlit'
 gem 'bundler'
 gem 'dotenv-rails'
 gem 'pg'
