@@ -22,12 +22,12 @@ RSpec.describe AdminController, type: :controller do
     end
     it "updates a user" do
       user = FactoryGirl.create(:user)
-      patch :update, format: user, user: {:username => "test23r"}
+      patch :update, format: user, params: { user: { :username => "test23r" } }
       expect(response).to redirect_to(admin_path)
     end
     it "doesn't update a user when the email is empty" do
       user = FactoryGirl.create(:user)
-      patch :update, format: user, user: {:email => ""}
+      patch :update, format: user, params: {user: {:email => ""}}
       expect(response).to render_template(:edit)
     end
     it "can delete a user" do
@@ -37,12 +37,12 @@ RSpec.describe AdminController, type: :controller do
     end
     it "can confirm a user" do
       user = FactoryGirl.create(:user)
-      get :confirm, id: user.id
+      get :confirm, params: {id: user.id}
       expect(response).to redirect_to(admin_path)
     end
     it "can unlock a user" do
       user = FactoryGirl.create(:locked)
-      get :unlock, id: user.id
+      get :unlock, params: {id: user.id}
       expect(response).to redirect_to(admin_path)
     end
   end
