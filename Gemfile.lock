@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/bootstrap-ruby/rails-bootstrap-forms.git
-  revision: 572b03844f08d4e775914c04c445558e4d213a8c
+  revision: 271c20e28011d665856cad09e99036653cf8acb3
   specs:
-    bootstrap_form (2.5.0)
+    bootstrap_form (2.5.1)
 
 GIT
   remote: https://github.com/jason-hobbs/gritter.git
@@ -70,7 +70,7 @@ GEM
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.10.0)
     byebug (9.0.5)
-    capybara (2.9.0)
+    capybara (2.9.1)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
