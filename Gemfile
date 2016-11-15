@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.3.2'
 gem 'rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form', :git => 'https://github.com/bootstrap-ruby/rails-bootstrap-forms.git'
@@ -17,7 +17,6 @@ gem 'hamlit'
 gem 'bundler'
 gem 'dotenv-rails'
 gem 'pg'
-gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'simplecov', :require => false, :group => :test
 gem 'friendly_id'
 gem 'whenever', :require => false

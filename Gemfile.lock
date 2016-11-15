@@ -79,8 +79,6 @@ GEM
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
     chronic (0.10.2)
-    codeclimate-test-reporter (1.0.3)
-      simplecov
     coderay (1.1.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -277,7 +275,6 @@ DEPENDENCIES
   bundler
   byebug
   capybara
-  codeclimate-test-reporter
   coffee-rails
   database_cleaner
   devise
@@ -310,7 +307,7 @@ DEPENDENCIES
   whenever
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.2p217
 
 BUNDLED WITH
    1.13.6
