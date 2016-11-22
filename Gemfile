@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.2'
+ruby '2.3.3'
 gem 'rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form', :git => 'https://github.com/bootstrap-ruby/rails-bootstrap-forms.git'
