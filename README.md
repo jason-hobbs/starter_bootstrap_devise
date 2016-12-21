@@ -6,7 +6,7 @@
 
 This is a starter site for Ruby on Rails apps.  
 It has bootstrap, gritter notifications, postgresql, gravatar, and devise built in.  
-Uses Ruby 2.3.1 and Rails 5.0.0
+Uses Ruby 2.3.3 and Rails 5.0.1
 [Demo here](http://starter-bootstrap-devise.heroku.com).  
 
 Clone to a folder, then:  
