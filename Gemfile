@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.3'
+ruby '2.4.0'
 gem 'rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form', :git => 'https://github.com/bootstrap-ruby/rails-bootstrap-forms.git'
@@ -10,7 +10,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-gem 'sdoc', group: :doc
+#gem 'sdoc', group: :doc
 gem 'devise'
 gem 'gritter', :git => 'https://github.com/jason-hobbs/gritter.git'
 gem 'hamlit'
