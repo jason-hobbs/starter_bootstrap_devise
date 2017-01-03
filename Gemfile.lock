@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/bootstrap-ruby/rails-bootstrap-forms.git
-  revision: 8814ff1eefef003a0453f17db2c4358febf22ef4
+  revision: bb7aa59813806666e8aad610ee5d65a5ddddb320
   specs:
     bootstrap_form (2.5.3)
 
@@ -67,7 +67,7 @@ GEM
       sass (>= 3.3.4)
     brakeman (3.4.1)
     builder (3.2.2)
-    bullet (5.4.3)
+    bullet (5.5.0)
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.10.0)
     byebug (9.0.6)
@@ -87,7 +87,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.3)
+    concurrent-ruby (1.0.4)
     database_cleaner (1.5.3)
     debug_inspector (0.0.2)
     devise (4.2.0)
@@ -123,7 +123,7 @@ GEM
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
-    jquery-rails (4.2.1)
+    jquery-rails (4.2.2)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
@@ -140,14 +140,14 @@ GEM
     minitest (5.10.1)
     multi_json (1.12.1)
     nio4r (1.2.1)
-    nokogiri (1.6.8.1)
+    nokogiri (1.7.0)
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     passenger (5.1.1)
       rack
       rake (>= 0.8.1)
     pg (0.19.0)
-    public_suffix (2.0.4)
+    public_suffix (2.0.5)
     puma (3.6.2)
     rack (2.0.1)
     rack-attack (5.0.1)
@@ -170,9 +170,9 @@ GEM
       actionpack (~> 5.x)
       actionview (~> 5.x)
       activesupport (~> 5.x)
-    rails-dom-testing (2.0.1)
+    rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
-      nokogiri (~> 1.6.0)
+      nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rails_12factor (0.0.3)
@@ -305,4 +305,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.13.6
+   1.13.7
