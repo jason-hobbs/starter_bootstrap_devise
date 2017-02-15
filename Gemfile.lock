@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/bootstrap-ruby/rails-bootstrap-forms.git
-  revision: dccdb60744e81091a66352e6d369a5de25f294f9
+  revision: ff4f7ff127d582fbe340e8ca93ec93b0e7acac02
   specs:
-    bootstrap_form (2.5.3)
+    bootstrap_form (2.6.0)
 
 GIT
   remote: https://github.com/jason-hobbs/gritter.git
@@ -53,7 +53,7 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
-    autoprefixer-rails (6.7.0)
+    autoprefixer-rails (6.7.2)
       execjs
     bcrypt (3.1.11)
     better_errors (2.1.1)
@@ -65,7 +65,7 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    brakeman (3.4.1)
+    brakeman (3.5.0)
     builder (3.2.3)
     bullet (5.5.0)
       activesupport (>= 3.0.0)
@@ -109,17 +109,17 @@ GEM
     factory_girl_rails (4.8.0)
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
-    faker (1.7.2)
+    faker (1.7.3)
       i18n (~> 0.5)
     friendly_id (5.2.0)
       activerecord (>= 4.0.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    hamlit (2.7.5)
-      temple (~> 0.7.6)
+    hamlit (2.8.0)
+      temple (>= 0.8.0)
       thor
       tilt
-    i18n (0.7.0)
+    i18n (0.8.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -142,6 +142,7 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    openssl (2.0.3)
     orm_adapter (0.5.0)
     passenger (5.1.2)
       rack
@@ -229,7 +230,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    temple (0.7.7)
+    temple (0.8.0)
     thor (0.19.4)
     thread_safe (0.3.5)
     tilt (2.0.6)
@@ -283,6 +284,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   minitest
+  openssl (>= 2.0.3)
   passenger
   pg
   puma
@@ -305,4 +307,4 @@ RUBY VERSION
    ruby 2.4.0p0
 
 BUNDLED WITH
-   1.14.3
+   1.14.4

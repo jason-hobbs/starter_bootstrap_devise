@@ -9,6 +9,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'openssl', '>=2.0.3'
 gem 'jbuilder'
 #gem 'sdoc', group: :doc
 gem 'devise'
