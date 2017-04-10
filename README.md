@@ -26,9 +26,7 @@ Then run:
 
 ```
 bundle
-rake db:create
-rake db:migrate
-rake db:seed
+rails db:setup
 ```
 
 Look at db/seeds.rb for the default user and admin logins.
