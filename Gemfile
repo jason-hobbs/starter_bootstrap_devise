@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.4.1'
-gem 'rails'
+gem 'rails', '=5.1.0'
 gem 'bootstrap-sass'
 gem 'bootstrap_form', :git => 'https://github.com/bootstrap-ruby/rails-bootstrap-forms.git'
 gem 'sass-rails'
@@ -11,8 +11,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'openssl', '>=2.0.3'
 gem 'jbuilder'
-#gem 'sdoc', group: :doc
-gem 'devise'
+gem 'sdoc', group: :doc
+gem 'devise', github: 'plataformatec/devise'
 gem 'gritter', :git => 'https://github.com/jason-hobbs/gritter.git'
 gem 'hamlit'
 gem 'bundler'
