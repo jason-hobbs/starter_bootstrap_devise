@@ -22,7 +22,7 @@ RSpec.describe AdminController, type: :controller do
     end
     it "updates a user" do
       user = FactoryGirl.create(:user)
-      patch :update, format: user, params: { user: { :username => "test23r" } }
+      patch :update, format: user, params: { user: { :username => "test23ring" } }
       expect(response).to redirect_to(admin_path)
     end
     it "doesn't update a user when the email is empty" do
