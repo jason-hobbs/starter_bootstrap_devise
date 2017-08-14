@@ -1,28 +1,27 @@
-%nav.navbar.navbar-inverse.navbar-fixed-top
+%nav.navbar.navbar-dark.bg-dark.fixed-top.navbar-expand-sm
   .container
-    .navbar-header
-      %button.navbar-toggle.collapsed{"aria-controls" => "navbar", "aria-expanded" => "false", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      = link_to "Project Name", root_path, class: "navbar-brand"
+    %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbar", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+
+    = link_to "Project Name", root_path, class: "navbar-brand"
     #navbar.navbar-collapse.collapse
+      %br
       - if current_user
-        %ul.nav.navbar-nav.navbar-right
-          %li.dropdown
+        %ul.nav.navbar-nav.ml-auto
+          %li.dropdown.nav-item
             %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
               = profile_image_for(current_user, size: 30) + current_user.username
               %span.caret
             %ul.dropdown-menu
               - if current_user.try(:admin?)
-                %li
+                %li.dropdown-item
                   = link_to '<i class="glyphicon glyphicon-dashboard"></i> Admin Dash'.html_safe, admin_path
-              %li
+              %li.dropdown-item
                 = link_to '<i class="glyphicon glyphicon-edit"></i> Edit'.html_safe, edit_user_registration_path(current_user)
-              %li.divider{:role => "separator"}
-              %li
+              %li.dropdown-divider{:role => "separator"}
+              %li.dropdown-item
                 = link_to '<i class="glyphicon glyphicon-log-out"></i> Sign Out'.html_safe, destroy_user_session_path, :method => :delete
       - else
-        = link_to "Sign Up", new_user_registration_path, class: "btn btn-primary navbar-btn navbar-right btn-margin-left"
-        = link_to "Sign In", new_user_session_path, class: "btn btn-primary navbar-btn navbar-right btn-margin-right"
+        = link_to "Sign Up", new_user_registration_path, class: "btn btn-primary nav-item ml-auto btn-margin-left"
+        &nbsp;
+        = link_to "Sign In", new_user_session_path, class: "btn btn-primary nav-item btn-margin-right"

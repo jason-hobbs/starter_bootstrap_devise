@@ -12,5 +12,9 @@ body {
   margin: 0px 5px 0px 0px;
   border-radius: 3px;
 }
-.navbar-nav>li>a { padding-top: 10px; padding-bottom: 10px; }
-.navbar-brand { padding: 15px 10px; }
+
+.dropdown-toggle {
+  a {
+    color: white;
+  }
+}
