@@ -3,10 +3,10 @@
   .row
     .col-sm-3
     .col-sm-6
-      .panel.panel-default
-        .panel-heading
-          %h3.panel-title Edit User
-        .panel-body
+      .card
+        .card-header
+          .font-weight-bold Edit User
+        .card-body
           = bootstrap_form_for @user, url: admin_edit_path(@user) do |f|
             %fieldset
               .form-group
@@ -29,9 +29,9 @@
                         = f.check_box :admin, {checked: true}
                       - else
                         = f.check_box :admin
-                = f.submit "Update", class: "btn btn-default"
+                = f.submit "Update", class: "btn btn-outline-secondary"
                 - unless @user.locked_at.nil?
-                  = link_to 'Unlock', admin_unlock_path(:id => @user.id), class: "btn btn-default"
+                  = link_to 'Unlock', admin_unlock_path(:id => @user.id), class: "btn btn-outline-secondary"
                 - if @user.confirmed_at.nil?
-                  = link_to 'Confirm', admin_confirm_path(:id => @user.id), class: "btn btn-default"
+                  = link_to 'Confirm', admin_confirm_path(:id => @user.id), class: "btn btn-outline-secondary"
           = link_to "Back", :back

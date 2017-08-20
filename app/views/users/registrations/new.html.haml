@@ -3,10 +3,10 @@
   .row
     .col-sm-3
     .col-sm-6
-      .panel.panel-default
-        .panel-heading
-          %h3.panel-title Sign Up
-        .panel-body
+      .card
+        .card-header
+          .font-weight-bold Sign Up
+        .card-body
           = bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
             %fieldset
               .form-group
@@ -26,6 +26,6 @@
                   .row
                     .col-sm-12
                       = f.check_box :admin
-                = f.submit "Sign Up", class: "btn btn-default"
+                = f.submit "Sign Up", class: "btn btn-outline-secondary"
           = render "users/shared/links"
     .col-sm-3

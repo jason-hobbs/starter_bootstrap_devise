@@ -4,10 +4,10 @@
     .col-sm-3
     .col-sm-6
       = js add_gritter(flash[:alert], :image => :notice, :title => "Pay attention!") if flash[:alert]
-      .panel.panel-default
-        .panel-heading
-          %h3.panel-title Sign In
-        .panel-body
+      .card
+        .card-header
+          .font-weight-bold Sign In
+        .card-body
           = bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
             %fieldset
               .form-group
@@ -22,7 +22,7 @@
                     .col-sm-12
                       = f.check_box :remember_me
             %fieldset.form-group.action
-              %input(type="submit" value="Sign in" class="btn btn-default")
+              %input(type="submit" value="Sign in" class="btn btn-outline-secondary")
           .row
             .col-sm-12
               = render "users/shared/links"

@@ -3,10 +3,10 @@
   .row
     .col-sm-1
     .col-sm-10
-      .panel.panel-default
-        .panel-heading
-          %h3.panel-title All Users
-        .panel-body
+      .card
+        .card-header
+          .font-weight-bold All Users
+        .card-body
           - @users.each do |user|
             .row
               .col-sm-3

@@ -3,10 +3,10 @@
   .row
     .col-sm-3
     .col-sm-6
-      .panel.panel-default
-        .panel-heading
-          %h3.panel-title Edit #{resource_name.to_s.humanize}
-        .panel-body
+      .card
+        .card-header
+          .font-weight-bold Edit #{resource_name.to_s.humanize}
+        .card-body
           = bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
             %fieldset
               .form-group
@@ -29,6 +29,6 @@
                 .row
                   .col-sm-12
                     = f.password_field :current_password, hide_label: true, icon: "asterisk", placeholder: "Current Password"
-                = f.submit "Update", class: "btn btn-default"
-          %p #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, class: "btn btn-default", method: :delete}
+                = f.submit "Update", class: "btn btn-outline-secondary"
+          %p #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, class: "btn btn-outline-secondary", method: :delete}
           = link_to "Back", :back
