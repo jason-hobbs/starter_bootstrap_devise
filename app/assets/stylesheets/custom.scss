@@ -1,6 +1,4 @@
-body {
-  padding-top: 50px;
-}
+
 .btn-margin-left {
     margin-left: 5px;
 }
@@ -13,8 +11,16 @@ body {
   border-radius: 3px;
 }
 
-.dropdown-toggle {
-  a {
-    color: white;
-  }
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.pad-bottom {
+  padding-bottom: 5px;
 }
