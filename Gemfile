@@ -14,6 +14,7 @@ gem 'openssl', '>=2.0.3'
 gem 'jbuilder'
 gem 'sdoc', group: :doc
 gem 'devise'
+gem 'font-awesome-rails'
 gem 'gritter', :git => 'https://github.com/jason-hobbs/gritter.git'
 gem 'hamlit'
 gem 'bundler'
