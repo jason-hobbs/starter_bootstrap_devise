@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/jason-hobbs/starter_bootstrap_devise/badges/gpa.svg)](https://codeclimate.com/github/jason-hobbs/starter_bootstrap_devise) [![Test Coverage](https://codeclimate.com/github/jason-hobbs/starter_bootstrap_devise/badges/coverage.svg)](https://codeclimate.com/github/jason-hobbs/starter_bootstrap_devise/coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d6cdf645170376983e50/maintainability)](https://codeclimate.com/github/jason-hobbs/starter_bootstrap_devise/maintainability)
 [![security](https://hakiri.io/github/jason-hobbs/starter_bootstrap_devise/master.svg)](https://hakiri.io/github/jason-hobbs/starter_bootstrap_devise/master)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
