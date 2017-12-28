@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.2'
+ruby '2.5.0'
 gem 'rails'
 gem 'bootstrap', '~> 4.0.0.beta2'
 gem 'bootstrap_form'
@@ -13,7 +13,7 @@ gem 'turbolinks'
 gem 'openssl', '>=2.0.3'
 gem 'jbuilder'
 gem 'sdoc', group: :doc
-gem 'devise'
+gem 'devise', git: 'https://github.com/plataformatec/devise'
 gem 'font-awesome-rails'
 gem 'gritter', :git => 'https://github.com/jason-hobbs/gritter.git'
 gem 'hamlit'
