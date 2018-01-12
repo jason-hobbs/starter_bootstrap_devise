@@ -19,7 +19,7 @@ gem 'gritter', :git => 'https://github.com/jason-hobbs/gritter.git'
 gem 'hamlit'
 gem 'bundler'
 gem 'dotenv-rails'
-gem 'pg'
+gem 'pg', '<1.0.0'
 gem 'simplecov', :require => false, :group => :test
 gem 'friendly_id'
 gem 'whenever', :require => false
