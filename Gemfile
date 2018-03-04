@@ -1,56 +1,58 @@
 source 'https://rubygems.org'
 
 ruby '2.5.0'
-gem 'rails'
 gem 'bootstrap'
 gem 'bootstrap_form'
-gem 'sass-rails'
-gem 'uglifier'
-gem 'popper_js'
-gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'openssl', '>=2.0.3'
-gem 'jbuilder'
-gem 'sdoc', group: :doc
-gem 'devise'
-gem 'font-awesome-rails'
-gem 'gritter', :git => 'https://github.com/jason-hobbs/gritter.git'
-gem 'hamlit'
 gem 'bundler'
+gem 'coffee-rails'
+gem 'devise'
 gem 'dotenv-rails'
-gem 'pg', '<1.0.0'
-gem 'simplecov', :require => false, :group => :test
+gem 'font-awesome-rails'
 gem 'friendly_id'
-gem 'whenever', :require => false
+gem 'gritter', git: 'https://github.com/jason-hobbs/gritter.git'
+gem 'hamlit'
+gem 'jbuilder'
+gem 'jquery-rails'
+gem 'openssl', '>=2.0.3'
+gem 'pg'
+gem 'popper_js'
 gem 'rack-attack'
+gem 'rails'
+gem 'sass-rails'
+gem 'sdoc', group: :doc
+gem 'turbolinks'
+gem 'uglifier'
+gem 'webpacker'
+gem 'whenever', require: false
 
 group :production do
-  gem 'rails_12factor'
   gem 'passenger'
+  gem 'rails_12factor'
 end
 
 group :development do
-  gem 'brakeman'
-  gem 'web-console'
-  gem 'bullet'
-  gem 'spring'
-  gem 'puma'
   gem 'better_errors'
   gem 'binding_of_caller'
-  #gem 'rack-mini-profiler'
+  gem 'brakeman'
+  gem 'bullet'
+  gem 'puma'
+  gem 'spring'
   gem 'traceroute'
+  gem 'web-console'
 end
+
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'rails-controller-testing'
-  gem 'minitest'
   gem 'byebug'
+  gem 'minitest'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails'
 end
+
 group :test do
+  gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'shoulda-matchers'
-  gem 'capybara'
+  gem 'simplecov'
 end
