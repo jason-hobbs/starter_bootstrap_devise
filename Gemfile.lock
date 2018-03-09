@@ -110,8 +110,8 @@ GEM
     faker (1.8.7)
       i18n (>= 0.7)
     ffi (1.9.23)
-    font-awesome-rails (4.7.0.3)
-      railties (>= 3.2, < 5.2)
+    font-awesome-sass (5.0.6.2)
+      sass (>= 3.2)
     friendly_id (5.2.3)
       activerecord (>= 4.0.0)
     globalid (0.4.1)
@@ -297,7 +297,7 @@ DEPENDENCIES
   dotenv-rails
   factory_bot_rails
   faker
-  font-awesome-rails
+  font-awesome-sass
   friendly_id
   gritter!
   hamlit
