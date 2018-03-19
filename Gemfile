@@ -22,7 +22,6 @@ gem 'sass-rails'
 gem 'sdoc', group: :doc
 gem 'turbolinks'
 gem 'uglifier'
-gem 'webpacker'
 gem 'whenever', require: false
 
 group :production do
