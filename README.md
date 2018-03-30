@@ -7,7 +7,7 @@
 This is a starter site for Ruby on Rails apps.  
 It has Bootstrap 4, gritter notifications, Postgresql, Gravatar, Devise,
 and Font Awesome 5 built in.
-Uses Ruby 2.5.0 and Rails 5.1.5.
+Uses Ruby 2.5.1 and Rails 5.1.6.
 Webpacker is also installed for integrating javascript frameworks.
 [Demo here](http://starter-bootstrap-devise.herokuapp.com).  
 
