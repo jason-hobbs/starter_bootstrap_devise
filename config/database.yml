@@ -12,8 +12,10 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: <%= ENV['TEST_DATABASE_NAME'] %>
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  database: test
 
 production:
   <<: *default
