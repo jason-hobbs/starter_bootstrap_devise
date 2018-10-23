@@ -17,6 +17,3 @@
 //= require bootstrap
 //= require toastr
 //= require_tree .
-
-
-jQuery.extend($.gritter.options,{time:1500,});

@@ -5,7 +5,7 @@
 ###Starter_Bootstrap
 
 This is a starter site for Ruby on Rails apps.  
-It has Bootstrap 4, gritter notifications, Postgresql, Gravatar, Devise,
+It has Bootstrap 4, toastr notifications, Postgresql, Gravatar, Devise,
 and Font Awesome 5 built in.
 Uses Ruby 2.5.13and Rails 5.2.1.
 Webpacker is also installed for integrating javascript frameworks.
