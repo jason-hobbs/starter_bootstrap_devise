@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require popper
 //= require bootstrap
-//= require gritter
+//= require toastr
 //= require_tree .
 
 

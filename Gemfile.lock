@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/jason-hobbs/gritter.git
-  revision: 6a53b45cda9e991b1d2235b486922d16ffbc3ad8
-  specs:
-    gritter (1.2.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -313,7 +307,6 @@ DEPENDENCIES
   faker
   font-awesome-sass
   friendly_id
-  gritter!
   hamlit
   jbuilder
   jquery-rails
