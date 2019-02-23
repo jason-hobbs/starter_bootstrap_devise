@@ -7,6 +7,7 @@ class User < ApplicationRecord
 
   extend FriendlyId
   friendly_id :username, use: :slugged
+  mount_uploader :avatar, AvatarUploader
 
   validates_uniqueness_of :username
   validates_presence_of :username

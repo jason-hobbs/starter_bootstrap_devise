@@ -8,6 +8,11 @@
           .font-weight-bold Edit User
         .card-body
           = bootstrap_form_for @user, url: admin_edit_path(@user) do |f|
+            .row
+              .col-sm-3
+                = profile_image_for(@user)
+              .col-sm-9
+                = f.file_field :avatar, class: "filestyle", :"data-placeholder" => "No file"
             %fieldset
               .form-group
                 .row
