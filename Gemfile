@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.2'
+ruby '2.6.3'
 gem 'bootsnap'
 gem 'bootstrap'
 gem 'bootstrap_form'
@@ -20,7 +20,7 @@ gem 'pg'
 gem 'popper_js'
 gem 'rack-attack'
 gem 'rails'
-gem 'sass-rails'
+gem 'sassc'
 gem 'sdoc', group: :doc
 gem 'turbolinks'
 gem 'uglifier'
