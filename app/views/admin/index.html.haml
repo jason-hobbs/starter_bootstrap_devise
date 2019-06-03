@@ -14,8 +14,8 @@
               .col-sm-6
                 = user.email
               .col-sm-3
-                = link_to 'Edit', admin_edit_path(user)
+                = link_to 'Edit', edit_admin_path(user.id), remote: true
                 |
-                = link_to 'Destroy', admin_edit_path(user), method: :delete, data: { confirm: 'Are you sure?' }
+                = link_to 'Destroy', admin_path(user.id), method: :delete, data: { confirm: 'Are you sure?' }
               %hr
     .col-sm-1
