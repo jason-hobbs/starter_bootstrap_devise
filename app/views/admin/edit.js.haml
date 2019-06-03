@@ -1,0 +1,4 @@
+$("#WidgetGenModalBody").html('#{escape_javascript render(partial: "useredit")}')
+if($('#WidgetGenModal').is(':hidden')) {
+$("#WidgetGenModal").modal("toggle")
+}

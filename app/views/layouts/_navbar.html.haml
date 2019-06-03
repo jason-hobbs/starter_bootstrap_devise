@@ -14,7 +14,7 @@
               %span.caret
             .dropdown-menu
               - if current_user.try(:admin?)
-                = link_to '<i class="fas fa-tachometer-alt" aria-hidden="true"></i> Admin Dash'.html_safe, admin_path, class: "dropdown-item"
+                = link_to '<i class="fas fa-tachometer-alt" aria-hidden="true"></i> Admin Dash'.html_safe, admin_index_path, class: "dropdown-item"
               = link_to '<i class="fas fa-pencil-alt" aria-hidden="true"></i> Edit'.html_safe, edit_user_registration_path(current_user), class: "dropdown-item"
               .dropdown-divider{:role => "separator"}
               = link_to '<i class="fas fa-sign-out-alt" aria-hidden="true"></i> Sign Out'.html_safe, destroy_user_session_path, :method => :delete, class: "dropdown-item"

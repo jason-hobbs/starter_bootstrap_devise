@@ -1,17 +1,24 @@
+# frozen_string_literal: true
+
 class AdminController < ApplicationController
   before_action :authenticate_user!
   before_action :authenticate_admin
+  skip_before_action :verify_authenticity_token, only: [:update], if: -> { params[:avatar] }
 
   def index
     @users = User.all
   end
 
   def edit
-    @user = User.friendly.find(params[:format])
+    @user = User.find(params[:id])
+    respond_to do |format|
+      format.html { render :edit }
+      format.js { render :edit }
+    end
   end
 
   def update
-    @user = User.friendly.find(params[:format])
+    @user = User.find(params[:id])
     @user.slug = nil
     if @user.update_without_password(user_params)
       if params[:user][:password]
@@ -20,29 +27,33 @@ class AdminController < ApplicationController
         @user.reset_password_token = 'temp'
         @user.save
       end
-      redirect_to admin_path, :gflash => { :success => "Account updated!" }
+      flash[:success] = 'User updated'
+      redirect_to admin_index_path
     else
       render :edit
     end
   end
 
   def destroy
-    @user = User.friendly.find(params[:format])
+    @user = User.find(params[:id])
     @user.destroy
-    redirect_to admin_path, :gflash => { :success => "Account deleted!" }
+    flash[:success] = 'Account deleted!'
+    redirect_to admin_index_path
   end
 
   def confirm
     user = User.find(params[:id])
     user.confirmed_at = Date.today
     user.save!
-    redirect_to admin_path, :gflash => { :success => "User Confirmed" }
+    flash[:success] = 'User confirmed'
+    redirect_to admin_index_path
   end
 
   def unlock
     user = User.find(params[:id])
     user.unlock_access!
-    redirect_to admin_path, :gflash => { :success => "User Unlocked" }
+    flash[:success] = 'User unlocked'
+    redirect_to admin_index_path
   end
 
   private
@@ -50,5 +61,4 @@ class AdminController < ApplicationController
   def user_params
     params.require(:user).permit(:username, :email, :password, :password_confirmation, :admin, :avatar)
   end
-
 end

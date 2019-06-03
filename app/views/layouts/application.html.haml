@@ -10,6 +10,15 @@
     = render 'layouts/navbar'
     = render 'layouts/toastr'
     = yield
+
+
+    #reusable_modal.modal.fade{:role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          / this is where the content will be placed by the script
+
+    = render 'layouts/modal'
+          
     .container
       %hr
         %footer
