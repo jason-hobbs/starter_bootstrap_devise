@@ -3,6 +3,7 @@
 require 'rails_helper'
 require 'database_cleaner'
 
+DatabaseCleaner.allow_remote_database_url = true
 DatabaseCleaner.strategy = :truncation
 DatabaseCleaner.clean
 
