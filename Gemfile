@@ -25,6 +25,7 @@ gem 'sdoc', group: :doc
 gem 'turbolinks'
 gem 'uglifier'
 gem 'whenever', require: false
+gem 'webpacker'
 
 group :production do
   gem 'passenger'
