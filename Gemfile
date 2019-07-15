@@ -15,17 +15,18 @@ gem 'hamlit'
 gem 'jbuilder'
 gem 'jquery-rails'
 gem 'mini_magick'
-gem 'openssl', '>=2.0.3'
+gem 'openssl'
 gem 'pg'
 gem 'popper_js'
 gem 'rack-attack'
-gem 'rails'
+gem 'rails', '>=6.0.0rc1'
+gem 'rails-ujs'
 gem 'sassc'
 gem 'sdoc', group: :doc
 gem 'turbolinks'
 gem 'uglifier'
-gem 'whenever', require: false
 gem 'webpacker'
+gem 'whenever', require: false
 
 group :production do
   gem 'passenger'
@@ -48,7 +49,11 @@ group :development, :test do
   gem 'byebug'
   gem 'minitest'
   gem 'rails-controller-testing'
-  gem 'rspec-rails'
+  gem 'rspec-core', git: 'https://github.com/rspec/rspec-core'
+  gem 'rspec-expectations', git: 'https://github.com/rspec/rspec-expectations'
+  gem 'rspec-mocks', git: 'https://github.com/rspec/rspec-mocks'
+  gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails', branch: '4-0-dev'
+  gem 'rspec-support', git: 'https://github.com/rspec/rspec-support'
 end
 
 group :test do

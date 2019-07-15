@@ -1,4 +1,4 @@
-class AddUnlockTokenToUsers < ActiveRecord::Migration[5.1]
+class AddUnlockTokenToUsers < ActiveRecord::Migration[6.0]
   def change
     add_column :users, :unlock_token, :string
   end
