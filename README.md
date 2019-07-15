@@ -7,24 +7,11 @@
 This is a starter site for Ruby on Rails apps.  
 It has Bootstrap 4, toastr notifications, Postgresql, Gravatar, Devise,
 and Font Awesome 5 built in.
-Uses Ruby 2.6.3 and Rails 5.2.3.
+Uses Ruby 2.6.3 and Rails 6.0.0rc1.
 Webpacker is also installed for integrating javascript frameworks.
 [Demo here](http://starter-bootstrap-devise.herokuapp.com).  
 
 Clone to a folder, then:  
-&nbsp;&nbsp;Create a file in the root of the folder named: .env  
-&nbsp;&nbsp;copy and paste the following with any changes you want:  
-
-```
-  DATABASE_USER=user
-  DATABASE_PASSWORD=password
-  DEV_DATABASE_NAME=starter_bootstrap_dev
-  TEST_DATABASE_NAME=starter_bootstrap_test
-  DATABASE_NAME=starter_bootstrap
-  GMAIL_USERNAME=user@gmail.com
-  GMAIL_PASSWORD=password
-```
-Then run:
 
 ```
 bundle
