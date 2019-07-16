@@ -3,6 +3,5 @@
   - toastr_key = 'info' if key == 'notice'
   - toastr_key = 'warning' if key == 'alert'
   :javascript
-    $(function() {
-      toastr["#{toastr_key}"]("#{flash[key]}",);
-    });
+    toastr["#{toastr_key}"]("#{flash[key]}",);
+

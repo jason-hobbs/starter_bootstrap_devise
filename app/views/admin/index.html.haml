@@ -1,21 +1,2 @@
 %br/
-.container
-  .row
-    .col-sm-1
-    .col-sm-10
-      .card
-        .card-header
-          .font-weight-bold All Users
-        .card-body
-          - @users.each do |user|
-            .row
-              .col-sm-3
-                = user.username
-              .col-sm-6
-                = user.email
-              .col-sm-3
-                = link_to 'Edit', edit_admin_path(user.id), remote: true
-                |
-                = link_to 'Destroy', admin_path(user.id), method: :delete, data: { confirm: 'Are you sure?' }
-              %hr
-    .col-sm-1
+= render 'index'
