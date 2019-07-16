@@ -27,7 +27,6 @@ class AdminController < ApplicationController
         @user.reset_password_token = 'temp'
         @user.save
       end
-      flash[:success] = 'User updated'
       redirect_to admin_index_path
     else
       render :edit

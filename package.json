@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "@rails/actioncable": "^6.0.0-alpha",
     "@rails/activestorage": "^6.0.0-alpha",
     "@rails/ujs": "^6.0.0-alpha",
@@ -8,13 +9,11 @@
     "channels": "^0.0.4",
     "expose-loader": "^0.7.5",
     "jquery": "^3.4.1",
-    "node-sass": "^4.12.0",
     "popper.js": "^1.15.0",
     "toastr": "^2.1.4",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.9.0",
     "webpack-dev-server": "^3.7.0"
   }
 }
