@@ -19,7 +19,7 @@ gem 'pg'
 gem 'rack-attack'
 gem 'rails', '>=6.0.0rc1'
 gem 'rails-ujs'
-gem 'sassc'
+gem 'sass-rails'
 gem 'sdoc', group: :doc
 gem 'uglifier'
 gem 'webpacker'
