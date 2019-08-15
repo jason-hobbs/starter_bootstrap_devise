@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :user do
-    sequence(:id) {Faker::Number.number(3)}
+    sequence(:id) {Faker::Number.number(digits: 3)}
     email {Faker::Internet.email}
     username {Faker::Name.name[4..20]}
     password { "password" }
@@ -9,7 +9,7 @@ FactoryBot.define do
   end
 
   factory :admin, class: User do
-    sequence(:id) {Faker::Number.number(3)}
+    sequence(:id) {Faker::Number.number(digits: 3)}
     email {Faker::Internet.email}
     username {Faker::Name.name[4..20]}
     password { "password" }
@@ -19,7 +19,7 @@ FactoryBot.define do
   end
 
   factory :locked, class: User do
-    sequence(:id) {Faker::Number.number(3)}
+    sequence(:id) {Faker::Number.number(digits: 3)}
     email {Faker::Internet.email}
     username {Faker::Name.name[4..20]}
     password { "password" }
