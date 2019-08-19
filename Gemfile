@@ -19,7 +19,7 @@ gem 'mini_magick'
 gem 'openssl'
 gem 'pg'
 gem 'rack-attack'
-gem 'rails', '>=6.0.0rc1'
+gem 'rails', '>=6.0.0'
 gem 'rails-ujs'
 gem 'sass-rails'
 gem 'sdoc', group: :doc
