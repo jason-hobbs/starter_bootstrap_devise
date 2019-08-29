@@ -22,4 +22,5 @@
     .container
       %hr
         %footer
-          %p &copy; Company 2015
+          %p 
+            = "&copy; Company #{Time.current.year}".html_safe

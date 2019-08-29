@@ -7,7 +7,7 @@
 This is a starter site for Ruby on Rails apps.  
 It has Bootstrap 4, toastr notifications, Postgresql, Gravatar, Devise,
 and Font Awesome 5 built in.
-Uses Ruby 2.6.3 and Rails 6.0.0.
+Uses Ruby 2.6.4 and Rails 6.0.0.
 Webpacker is also installed for integrating javascript frameworks.
 [Demo here](http://starter-bootstrap-devise.herokuapp.com).  
 
@@ -29,6 +29,6 @@ to run all tests.
 Then just add your own Models, Views, and Controllers!
 
 
-Password confirmation, reset, and unlock is sent using Gmail.  To use Mandrill, Mailgun, etc. just
+Password confirmation, reset, and unlock is sent using Email.  To use Gmail, Mandrill, Mailgun, etc. just
 edit the config/environments/development.rb and production.rb changing the
 settings in config.action_mailer.smtp_settings.

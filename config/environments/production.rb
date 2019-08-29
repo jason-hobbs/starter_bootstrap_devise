@@ -10,6 +10,7 @@ Rails.application.configure do
   end
   # Code is not reloaded between requests.
   config.cache_classes = true
+  config.require_master_key = true
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
@@ -87,13 +88,12 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
+    address: "smtp.mailgun.org",
     port: 587,
-    domain: "starter-bootstrap.com",
+    domain: "listrhythm.mailgun.org",
     authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"]
+    user_name: Rails.application.credentials.smtp_username,
+    password: Rails.application.credentials.smtp_password
   }
 
   config.action_mailer.default_url_options = { host: "starter-bootstrap-devise.herokuapp.com" }
