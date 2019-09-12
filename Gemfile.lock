@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/rspec/rspec-core
-  revision: 4ab682260afe252b90c4330bb7f91430f68f68c4
+  revision: 25b10efb835bb10e8736b68be56b60f7da3d22ce
   specs:
     rspec-core (3.9.0.pre)
       rspec-support (= 3.9.0.pre)
 
 GIT
   remote: https://github.com/rspec/rspec-expectations
-  revision: 75f5cc9cab09fd0728bcf95e26d2c4b46f73c466
+  revision: 0a77e2031a63f638440f9949affc8ec54326d3f4
   specs:
     rspec-expectations (3.9.0.pre)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/rspec/rspec-rails
-  revision: 39cbd9e979066d2069c13b964d68f0133e233314
+  revision: c11a1b6fff72c6c45c67727480d4558742eb292c
   branch: 4-0-dev
   specs:
     rspec-rails (4.0.0.beta2)
@@ -99,8 +99,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.1, >= 2.1.8)
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     bcrypt (3.1.13)
     better_errors (2.5.1)
       coderay (>= 1.0.0)
@@ -120,7 +120,7 @@ GEM
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.11)
     byebug (11.0.1)
-    capybara (3.28.0)
+    capybara (3.29.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -128,7 +128,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
-    carrierwave (2.0.0)
+    carrierwave (2.0.1)
       activemodel (>= 5.0.0)
       activesupport (>= 5.0.0)
       addressable (~> 2.6)
@@ -148,7 +148,7 @@ GEM
     crass (1.0.4)
     database_cleaner (1.7.0)
     debug_inspector (0.0.3)
-    devise (4.7.0)
+    devise (4.7.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0)
@@ -163,8 +163,8 @@ GEM
     factory_bot_rails (5.0.2)
       factory_bot (~> 5.0.2)
       railties (>= 4.2.0)
-    faker (2.2.0)
-      i18n (>= 0.8)
+    faker (2.2.2)
+      i18n (~> 1.6.0)
     ffi (1.11.1)
     font-awesome-sass (5.9.0)
       sassc (>= 1.11)
@@ -172,7 +172,7 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    hamlit (2.9.3)
+    hamlit (2.9.5)
       temple (>= 0.8.0)
       thor
       tilt
@@ -217,8 +217,8 @@ GEM
       rack
       rake (>= 0.8.1)
     pg (1.1.4)
-    public_suffix (3.1.1)
-    puma (4.1.0)
+    public_suffix (4.0.1)
+    puma (4.1.1)
       nio4r (~> 2.0)
     rack (2.0.7)
     rack-attack (6.1.0)
@@ -273,7 +273,7 @@ GEM
     responders (3.0.0)
       actionpack (>= 5.0)
       railties (>= 5.0)
-    ruby-vips (2.0.14)
+    ruby-vips (2.0.15)
       ffi (~> 1.9)
     ruby_dep (1.5.0)
     sass-rails (6.0.0)
@@ -332,7 +332,7 @@ GEM
       chronic (>= 0.6.3)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.1.9)
+    zeitwerk (2.1.10)
 
 PLATFORMS
   ruby
