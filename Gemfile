@@ -47,11 +47,7 @@ group :development, :test do
   gem 'byebug'
   gem 'minitest'
   gem 'rails-controller-testing'
-  gem 'rspec-core', git: 'https://github.com/rspec/rspec-core'
-  gem 'rspec-expectations', git: 'https://github.com/rspec/rspec-expectations'
-  gem 'rspec-mocks', git: 'https://github.com/rspec/rspec-mocks'
   gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails', branch: '4-0-dev'
-  gem 'rspec-support', git: 'https://github.com/rspec/rspec-support'
   # gem 'rspec-rails'
 end
 
