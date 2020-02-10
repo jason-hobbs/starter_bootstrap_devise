@@ -9,6 +9,8 @@ It has Bootstrap 4, toastr notifications, Postgresql, Gravatar, Devise,
 and Font Awesome 5 built in.
 Uses Ruby 2.7.0 and Rails 6.0.1.
 Webpacker is also installed for integrating javascript frameworks.
+Multi factor authentication is available as an option for users.
+Stimulus.js is also installed.
 [Demo here](http://starter-bootstrap-devise.herokuapp.com).  
 
 Clone to a folder, then:  
