@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resource :two_factor
   devise_for :users, controllers: { registrations: "registrations", :passwords => "passwords" }
   root 'pages#home'
   get 'admin/confirm' => 'admin#confirm'

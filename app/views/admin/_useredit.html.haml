@@ -18,6 +18,10 @@
       .row
         .col-sm-12
           = f.password_field :password_confirmation, hide_label: true, icon: "asterisk", placeholder: "New Password again"
+      - if @user.otp_required_for_login?
+        %p 2FA is enabled for this user
+      - else
+        %p 2FA is not enabled for this user
       - if current_user.try(:admin?)
         .row
           .col-sm-12

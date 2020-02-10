@@ -37,6 +37,10 @@
                 .row
                   .col-sm-12
                     = f.password_field :current_password, hide_label: true, icon: "asterisk", placeholder: "Current Password"
+                %h4 Two Factor Authentication
+                #two_factor
+                  = render partial: "admin/two_factor"
+                %br
                 = f.submit "Update", class: "btn btn-outline-secondary"
-          %p #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, class: "btn btn-outline-secondary", method: :delete}
-          = link_to "Back", :back
+                = link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, class: "btn btn-outline-secondary", method: :delete
+                = link_to "Close", root_path, class: "btn btn-outline-secondary spacer"

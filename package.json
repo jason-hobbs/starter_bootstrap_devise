@@ -10,6 +10,7 @@
     "expose-loader": "^0.7.5",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
+    "stimulus": "^1.1.1",
     "toastr": "^2.1.4",
     "turbolinks": "^5.2.0"
   },

@@ -1,0 +1,20 @@
+- if @user.otp_required_for_login?
+  %div= link_to "Disable", two_factor_path, method: :delete, class: "btn btn-outline-danger"
+  %br
+  .row
+    .mx-auto
+      %p Scan barcode in Google authenticator or Authy
+  .row.white.pt-2.pb-2
+    .mx-auto
+      = current_user.otp_qr_code.html_safe
+  - if params[:codes]
+    %hr/
+    %p
+      %strong.badge.badge-danger Important!
+      Write these backups codes down in a safe place. They can be used once to login to your account if your 2FA device is unavailable. They will never be displayed again for security.
+    - params[:codes].each do |code|
+      %div
+        %strong= code
+- else
+  %p When you login, you will be required to enter a one-time code along to one of your devices.
+  %div= link_to "Enable", two_factor_path, method: :post, class: "btn btn-outline-success"

@@ -16,12 +16,18 @@
                 .row
                   .col-sm-12
                     = f.password_field :password, icon: "asterisk", hide_label: true, autocomplete: "off", placeholder: "Password"
+                .twofa.row.d-none
+                  .col-sm-12
+                    = f.text_field :otp_attempt, icon: "asterisk", hide_label: true, autocomplete: "off", placeholder: "2FA code (Leave blank if not enabled)"
                 - if devise_mapping.rememberable?
                   .row
                     .col-sm-12
                       = f.check_box :remember_me
-            %fieldset.form-group.action
+            %fieldset.form-group.action{"data-controller" => "mfa"}
               %input(type="submit" value="Sign in" class="btn btn-outline-secondary")
+              %button.btn.facbut.btn-outline-secondary{"data-action" => "click->mfa#show", :type => "button"}
+                2FA enabled?
+
           .row
             .col-sm-12
               = render "users/shared/links"

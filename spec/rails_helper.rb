@@ -8,6 +8,7 @@ require 'rspec/rails'
 require 'devise'
 require 'factory_bot'
 require 'simplecov'
+require 'devise_two_factor/spec_helpers'
 SimpleCov.start
 
 RSpec.configure do |config|
