@@ -7,7 +7,7 @@
 This is a starter site for Ruby on Rails apps.  
 It has Bootstrap 4, toastr notifications, Postgresql, Gravatar, Devise,
 and Font Awesome 5 built in.
-Uses Ruby 2.7.0 and Rails 6.0.2.1.
+Uses Ruby 2.7.1 and Rails 6.0.2.2.
 Webpacker is also installed for integrating javascript frameworks.
 Multi factor authentication is available as an option for users.
 Stimulus.js is also installed.

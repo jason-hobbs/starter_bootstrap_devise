@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '2.7.0'
+ruby '2.7.1'
 gem 'bootsnap'
 gem 'bootstrap_form'
 gem 'bundler'
@@ -19,7 +19,7 @@ gem 'mini_magick'
 gem 'openssl'
 gem 'pg'
 gem 'rack-attack'
-gem 'rails', '>=6.0.0'
+gem 'rails'
 gem 'rails-ujs'
 gem 'rqrcode'
 gem 'sass-rails'
@@ -49,7 +49,7 @@ group :development, :test do
   gem 'byebug'
   gem 'minitest'
   gem 'rails-controller-testing'
-  gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails', branch: '4-0-maintenance'
+  gem 'rspec-rails'
   # gem 'rspec-rails'
 end
 
