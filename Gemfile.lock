@@ -293,7 +293,7 @@ GEM
     tilt (2.0.10)
     traceroute (0.8.1)
       rails (>= 3.0.0)
-    tzinfo (1.2.7)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
